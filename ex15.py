@@ -18,3 +18,9 @@ txt_again = open(file_again)
 print(txt_again.read())
 
 txt_again.close()
+
+# code that i wrote in the terminal to open the file 
+# filename = input()
+# ex15_sample.txt
+# >>> txt = open(filename)
+# >>> txt.read()
