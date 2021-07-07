@@ -1,11 +1,20 @@
+# Removing  the argv feature from the sys package
 from sys import argv
+
 script, filename = argv
+
 txt = open(filename)
-print ("Here's your file %r:"% filename)
-print (txt.read())
-print ("Type the filename again:")
-file_again =raw_input(">>> ")
+
+print(f"Here is your file {filename}:")
+print(txt.read())
+
+txt.close()
+
+print("Type the filename again:")
+file_again = input("> ")
+
 txt_again = open(file_again)
-print (txt_again.read())
-txt.close
-txt_again.close
+
+print(txt_again.read())
+
+txt_again.close()
