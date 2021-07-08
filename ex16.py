@@ -1,8 +1,8 @@
 # Read the argv feature from the sys package
 from sys import argv
-# Need to get two parameters from the command line
+
 script, filename = argv
-# f-string
+
 print(f"We are going to erase {filename}.")
 print("If you don't want that hit CTRL-C (^C).")
 print("If you do want that hit RETURN.")
@@ -10,7 +10,7 @@ print("If you do want that hit RETURN.")
 input('?')
 
 print("Opening the file...")
-# Open the file in write-only mode and return the file object. This file object cannot be read, only write
+
 target = open(filename, 'w')
 
 print("Truncating the file. Goodbye!")
